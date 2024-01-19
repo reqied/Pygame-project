@@ -266,9 +266,10 @@ class Table:
         pygame.draw.rect(screen, (166, 56, 56), pygame.Rect(620, 6, 176, 30), border_radius=40)
         text = font.render(str('Счет:'), True, (255, 232, 221))
         screen.blit(text, (625, 10))
-        pygame.draw.rect(screen, (255, 232, 221), pygame.Rect(-20, 233, 159, 80), border_radius=40)
-        text1 = font.render(str('В урну'), True, (170, 30, 0))
-        screen.blit(text1, (3, 260))
+        pygame.draw.rect(screen, (166, 56, 56), pygame.Rect(-20, 233, 159, 45), border_radius=40)
+        font = pygame.font.SysFont('couriernew', 20, bold=True)
+        text1 = font.render(str('В урну'), True, (255, 232, 221))
+        screen.blit(text1, (3, 240))
         for i in range(100):
             if table.levell() == 2:
                 screen.blit(backon1, (random.randint(705, 751), random.randint(50, 100)))
