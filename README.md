@@ -1,0 +1,2 @@
+# Pygame-project
+учебный прект
