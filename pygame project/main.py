@@ -309,7 +309,7 @@ class Table:
 
     def levell(self):
         levell = 1
-        if pizza.score() >= 3000:
+        if pizza.score() >= 700:
             levell = 2
         font = pygame.font.SysFont('couriernew', 20, bold=True)
         pygame.draw.rect(screen, (166, 56, 56), pygame.Rect(420, 6, 176, 30), border_radius=40)
